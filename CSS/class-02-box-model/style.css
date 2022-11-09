@@ -1,0 +1,59 @@
+
+*{
+    /* Reset com Seletor universarl */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+div{
+    height: 180px;
+    width: 180px;
+    border: solid 1px;
+    font-size: 64px;
+    color: white;
+
+    border-radius: 2000px;
+
+    padding: 8px 30px;
+    margin: 16px;
+    
+
+    /* display: inline-block; */
+
+    
+}
+.square1{
+    background-color: red;
+    position: absolute;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+ 
+}
+.square2{
+    background-color: yellow;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+}
+.square3{
+    background-color: green;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+body{
+    background-color: black;
+}
+
+main{
+    border: solid 2px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+}

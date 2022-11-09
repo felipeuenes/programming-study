@@ -1,0 +1,664 @@
+:root {
+    /* font-size: 1rem; */
+    /* font-size: 16px; */
+    /* font-size: 32px; */
+
+    /* 1rem => 16px = 100%*/
+    font-size: 6.25%;
+}
+
+a{
+    color: white;
+}
+
+.top{
+    width: 100%;
+    height: 100rem;
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    z-index: +10;
+    
+     
+    background-color: #000000;
+}
+th :hover{
+    color: #ffd493;
+}
+
+.nHome{
+    color: #ff9900;
+}
+.nModali{
+    color: #ff9900;
+}
+
+.cor1{
+    color: #ff9900;
+}
+.posi{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.logomarca{
+    position: absolute;
+    top: 0rem;
+    left: 30rem;
+    margin: 0;
+    padding: 0rem;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    font-size: 16rem;
+}
+
+.btmatri{
+    position: absolute;
+    left: 150rem;
+    top: 560rem;
+    border-radius: 50rem;
+    width: 350rem;
+    height: 50rem;
+    font-size: 30rem;
+    background-color: #ff9900;
+    color: #ffffff;
+    font-family: montserrat;
+    border: #ff9900;
+    box-shadow: 2rem 2rem 4rem black;
+}
+
+.btmatri:hover{
+    background-color:#ff9900b2;
+}
+
+.nomes{
+    color: white;
+    position: absolute;
+    top: 20rem;
+    font-size: 16rem;
+}
+
+.navega{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    left: 250rem;
+    top: 20rem;
+    
+}
+
+/* a{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    left: 250rem;
+    top: 20rem;
+} */
+
+.logo{
+    position: relative;
+    left: 20rem;
+    font-family: montserrat;
+}
+
+.fundohome{
+    width: 1240rem;
+    z-index: -3;
+    position: absolute;
+    left: 0rem;
+    
+}
+
+.primeiro{
+    display: flex;
+    flex-direction: row;
+    gap: 40rem;
+    
+    position: relative;
+    
+}
+
+.box-home{
+    background-image: url("/projects/site/images/ginastica.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 230rem;
+    right: 100rem;
+    position: relative;
+     width: 250rem;
+    height: 350rem;
+    /* display: inline-flex; */
+    background-color: white;
+    box-shadow: 2rem 2rem 10rem;
+    border-radius: 20rem;
+    z-index: +5;
+    text-align: center;
+    font-family: montserrat;
+    font-size: 18rem;
+
+
+    transition: transform 400ms, brightness 300ms;
+}
+
+.box-home:hover{
+    transform: scale(1.02);
+}
+
+.nomeg{
+    position: relative;
+    top: 48%;
+}
+
+.sabm{
+    position: relative;
+    top: 50%;
+    left: 0%;
+    width: 120rem;
+    height: 30rem;
+    font-family: montserrat;
+    border-radius: 20rem;
+    border: hidden;
+    box-shadow: 2rem 2rem 8rem rgba(0, 0, 0, 0.432);
+
+
+    transition: transform 150ms;
+}
+
+
+
+.sabm:hover{
+    transform: scale(1.1);
+}
+
+
+.box-home2{
+    background-image: url("/projects/site/images/musculação.jpg");
+    background-size: 125%;
+    background-repeat: no-repeat;
+    top: 230rem;
+    right: 100rem;
+    position: relative;
+    width: 250rem;
+    height: 350rem;
+    /* display: flex; */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2rem 2rem 10rem;
+    border-radius: 20rem;
+    z-index: +5;
+    text-align: center;
+    font-family: montserrat;
+    font-size: 18rem;
+
+
+    transition: transform 400ms, brightness 300ms;
+}
+
+
+.box-home2:hover{
+    transform: scale(1.02);
+}
+
+
+.imageicon2{
+    width: 125%;
+   
+}
+
+.title{
+    left: 20rem;
+    font-size: 60rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: +1;
+    color: #ffffff;
+    position: absolute;
+    left: 130rem;
+    top: 180rem;
+    background-color: #ff9900;
+}
+.txt{
+    position: absolute;
+    color: #ffffff;
+    top: 320rem;
+    left: 130rem;
+    font-size: 28rem;
+}
+
+.modatxt{
+    width: 140rem;
+    margin: 0 auto;
+
+}
+.hometxt{
+    position: relative;
+
+}
+.aula{
+    position: relative;
+    top: 450rem;
+    text-align: center;
+    font-size: 38rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ff9900;
+}
+.aulafundo{
+    position: absolute;
+    top: 570rem;
+    left: 450rem;
+    font-size: 150rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ff9900;
+    opacity: 0.12;
+}
+
+
+.jujits{
+    position: absolute;
+    width: 400rem;
+    height: 350rem;
+    left: 25rem;
+    top: 20rem;
+    border-radius: 20rem;
+
+    background-image: url("/projects/site/images/jujits.jpg");
+    background-size: 530rem;
+    background-repeat: no-repeat;
+    background-color: #000000;
+}
+
+.parte1{
+    width: 1000rem;
+    height: 380rem;
+    position: absolute;
+    top: 1050rem;
+    left: 150rem;
+    font-size: 16rem;
+    border: solid 1rem #000000;
+}
+
+.jiuH{
+    position: absolute;
+    right: 380rem;
+    top: 35rem;
+    font-size: 16rem;
+    font-family: montserrat;
+    color: #ff9900;
+
+}
+
+.tempo{
+    position: absolute;
+    top: 80rem;
+    right: 400rem;
+    font-family: montserrat;
+}
+.tempo1{
+    position: absolute;
+    top: 95rem;
+    right: 470rem;
+    font-size: 16rem;
+    font-family: montserrat;
+}
+.tempo3{
+    position: absolute;
+    top: 81rem;
+    right: 240rem;
+    font-family: montserrat;
+}
+.tempo4{
+    position: absolute;
+    top: 81rem;
+    right: 80rem;
+    font-family: montserrat;
+}
+
+.tabela2{
+    position: absolute;
+    top: 130rem;
+    right: 65rem;
+    font-family: montserrat;
+    width: 500rem;
+    color: #ff9900;
+}
+.tabela1{
+    position: absolute;
+    top: 100rem;
+    right: 80rem;
+    font-size: 16rem;
+    font-family: montserrat;
+    width: 400rem;
+    color: #000000;
+}
+.textojus{
+    position: absolute;
+    top: 170rem;
+    right: 60rem;
+}
+
+/* PARTE 2 */
+
+.parte2{
+    width: 1000rem;
+    height: 380rem;
+    position: absolute;
+    top: 1480rem;
+    left: 150rem;
+    font-size: 16rem;
+    border: solid 1rem #000000;
+}
+.jujits2{
+    position: absolute;
+    width: 400rem;
+    height: 350rem;
+    left: 25rem;
+    top: 20rem;
+    border-radius: 20rem;
+    
+
+    background-image: url("/projects/site/images/maitai.jpg");
+    background-size: 530rem;
+    background-repeat: no-repeat;
+    background-color: #000000;
+}
+.tabela3{
+    position: absolute;
+    top: 130rem;
+    right: 60rem;
+    font-family: montserrat;
+    width: 480rem;
+    color: #ff9900;
+}
+.textojus2{
+    position: absolute;
+    top: 170rem;
+    right: 85rem;
+}
+
+
+/* PARTE 3 */
+
+
+.parte3{
+    width: 1000px;
+    height: 380px;
+    position: absolute;
+    top: 1910rem;
+    font-size: 16rem;
+    left: 150rem;
+    border: solid 1rem #000000;
+}
+
+.boxe{
+    position: absolute;
+    width: 400rem;
+    height: 350rem;
+    left: 25rem;
+    top: 20rem;
+    border-radius: 20rem;
+
+    background-image: url("/projects/site/images/maitai.jpg");
+    background-size: 530rem;
+    background-repeat: no-repeat;
+    background-color: #000000;
+}
+
+.nameB{
+    position: absolute;
+    right: 438rem;
+    top: 35rem;
+    font-family: montserrat;
+    color: #ff9900;
+}
+
+.textobox{
+
+    position: absolute;
+    top: 170rem;
+    right: 60rem;
+}
+
+.boximage{
+    position: absolute;
+    width: 400rem;
+    height: 350rem;
+    left: 25rem;
+    top: 20rem;
+    border-radius: 20rem;
+
+    background-image: url("/projects/site/images/boxe.jpg");
+    background-size: 530px;
+    background-repeat: no-repeat;
+    background-color: #000000;
+}
+
+
+/* PARTE 4 */
+
+
+.parte4{
+    width: 1000rem;
+    height: 380rem;
+    position: absolute;
+    top: 2340rem;
+    left: 150rem;
+    font-size: 16rem;
+    border: solid 1rem #000000;
+}
+.nameBC{
+    position: absolute;
+    right: 355rem;
+    top: 35rem;
+    font-family: montserrat;
+    color: #ff9900;
+}
+.boximageC{
+    position: absolute;
+    width: 400rem;
+    height: 350rem;
+    left: 25rem;
+    top: 20rem;
+    border-radius: 20rem;
+
+    background-image: url("/projects/site/images/boxchinês.jpg");
+    background-size: 530rem;
+    background-repeat: no-repeat;
+    background-color: #000000;
+}
+.tabela4{
+    position: absolute;
+    top: 130rem;
+    right: 60rem;
+    font-family: montserrat;
+    width: 500rem;
+    color: #ff9900;
+}
+
+/* FOOTER */
+
+
+
+.planos{
+    background-color: #000000;
+    position: absolute;
+    top: 2800rem;
+    width: 100%;
+    height: 1000rem;
+    
+}
+
+.nameplanos{
+    position: relative;
+    color: #ff9900;
+    text-align: center;
+    font-size: 48rem;
+    font-family: montserrat extrabold;
+}
+.p1{
+    background-color: white;
+    position: relative;
+    width: 300rem;
+    height: 600rem;
+    left: 130rem;
+    font-size: 16rem;
+    /* margin: 0;
+    padding: 0; */
+}
+.p2{
+    background-color: white;
+    position: absolute;
+    width: 300rem;
+    height: 600rem;
+    left: 530rem;
+    font-size: 16rem;
+    /* top: 270px; */
+}
+.p3{
+    background-color: white;
+    position: absolute;
+    width: 300rem;
+    height: 600rem;
+    left: 925rem;
+    font-size: 16rem;
+    /* top: 270px; */
+}
+
+.p1,.p2, .p3{
+    border-radius: 20rem;
+    top: 60rem;
+}
+
+
+.caixaF{
+    position: relative;
+    display: flex;
+}
+.circulo{
+    width: 180rem;
+    height: 180rem;
+    background-color: #ff9900;
+    border-radius: 100rem;
+    position: absolute;
+    z-index: +1;
+    left: 190rem;
+    top: 0rem;
+    text-align: center;
+    font-family: montserrat;
+}
+
+.circulo2{
+    width: 180rem;
+    height: 180rem;
+    background-color: #ff9900;
+    border-radius: 100rem;
+    position: absolute;
+    z-index: +1;
+    left: 590rem;
+    top: 0px;
+    text-align: center;
+    font-family: montserrat;
+}
+
+.circulo3{
+    width: 180rem;
+    height: 180rem;
+    background-color: #ff9900;
+    border-radius: 100rem;
+    position: absolute;
+    z-index: +1;
+    left: 985rem;
+    top: 0rem;
+    text-align: center;
+    font-family: montserrat;
+}
+
+/* PREÇOS */
+
+.preco{
+    font-size: 30rem;
+    position: relative;
+    top: 0rem;
+    padding: 0rem;
+    font-family: montserrat black;
+}
+
+.planoNome{
+    position: relative;
+    top: 35rem;
+    font-size: 16rem;
+}
+
+.descriP{
+    position: relative;
+    top: 120rem;
+}
+li{
+    font-family: montserrat;
+}
+
+.btM{
+    position: absolute;
+    top: 500rem;
+    left: 50rem;
+    width: 200rem;
+    height: 40rem;
+    border-radius: 20rem;
+    border: hidden;
+    background-color: #ff9900;
+    color: white;
+    font-family: montserrat extrabold;
+    display: inline;
+   
+}
+
+.btM:hover{
+    background-color: #cf7c00;
+    height: 42rem;
+    width: 202rem;
+    box-shadow: 2rem 2rem 5rem black;
+}
+
+.matri{
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+}
+
+/* @media (max-width: 480px) {
+    #modainicio{
+
+        position: absolute;
+        top: 650rem;
+        left: 40rem;
+        text-align: center;
+        margin: 0 auto;
+        flex-direction: column;
+        display: flex;
+        gap: 50rem;
+        
+    }
+}
+
+@media (max-width: 480px){
+    #topo{
+        width: 100% ;
+        height: 200rem;
+
+    }
+
+    #nomes-topo{
+        font-size: 32rem;
+        top: 50rem;
+    }
+
+    #texto{
+        position: absolute;
+        text-align: left;
+        gap: 50rem;
+    }
+} */

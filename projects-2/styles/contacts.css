@@ -1,0 +1,90 @@
+@import url(style.css);
+
+
+/* .logoheader{
+    
+    border-radius: 100rem;
+} */
+
+main{
+    padding: 16rem;
+}
+
+main h1{
+    background: brown;
+    color: white;
+    padding: 16rem;
+    text-align: center;
+    border-radius: 16rem 16rem 0rem 0rem;
+}   
+
+.form-contact legend{
+    display: none;
+}
+
+.inputBox label{
+    font-weight: 700;
+    font-family: arial;
+    font-size: 13rem;
+    color: brown;
+}
+
+.inputBox input, 
+.inputBox select,
+.inputBox textarea{
+    width: 100%;
+    margin-top: 2rem;
+    padding: 5rem;
+
+    border-radius: 8rem;
+    border: solid 1rem brown;
+}
+
+.inputBox input:focus,
+.inputBox select:focus,
+.inputBox textarea:focus{
+    outline: solid 1rem brown;
+}
+
+fieldset{
+    padding: 16rem;
+    border-radius: 0rem 0rem 16rem 16rem;
+
+    background-color: rgb(199, 199, 199);
+    border: solid 1rem brown;
+}
+
+textarea{
+    resize: none;
+    
+}
+
+form button{
+    margin-top: 4rem;
+    width: 100%;
+    padding: 8rem;
+    
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 8rem;
+    
+
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: rgb(0, 105, 0);
+}
+
+@media (min-width: 480px) {
+    .form-contact {
+        display: flex;
+
+        gap: 64rem;
+     
+
+        width: 750rem;
+        margin: 16rem;
+    }
+}

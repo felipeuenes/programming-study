@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    height: 100vh;
+    display: grid;
+
+    grid-template-areas: 
+    "header header" 
+    "main aside"
+    ". aside"
+    ". aside" 
+    "footer footer";
+
+    grid-template-columns: 120px 120px;
+    grid-template-rows: 100px 150px 80px 100px 100px;
+
+    padding: 16px;
+    gap: 12px;
+    /* pode usar frações = 1fr */
+
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 48px;
+}
+header{
+    background-color: aqua;
+    grid-area: header;
+    color: black;
+}
+main{
+    background-color: blue;
+    grid-area: main;
+}
+aside{
+    background-color: green;
+    grid-area: aside;
+
+}
+footer{
+    background-color: #990000;
+    grid-area: footer;
+}
