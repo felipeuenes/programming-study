@@ -46,3 +46,7 @@ console.log(fruits);
 let avarege = 7;
 
 console.log(avarege >= 7 ? 'aprovado': 'reprovado');
+
+
+console.log((7 + 8) / 2);
+console.log(3 > 2 && 4 < 5);
