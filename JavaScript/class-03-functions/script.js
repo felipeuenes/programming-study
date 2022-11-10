@@ -25,3 +25,16 @@ let sum = function (num1, num2){
 }
 
 console.log(sum(2, 3));
+
+
+
+// >>> Arrow <<<
+
+
+
+let susm = (num1, num2) => num1 + num2;
+
+console.log(sum(3, 3));
+
+
+
