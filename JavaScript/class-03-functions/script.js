@@ -37,4 +37,26 @@ let susm = (num1, num2) => num1 + num2;
 console.log(sum(3, 3));
 
 
+// >>> Constructor <<<
+
+
+
+function Car(brandName, motorPower){
+        this.brand = brandName
+        this.motor = motorPower
+        this.walk = () => {
+           console.log("Running..."); 
+        }
+
+}
+
+const uno = new Car("Fiat", "1.4");
+
+console.log(uno);
+console.log(uno.brand);
+console.log(uno.motor);
+console.log(uno.walk());
+
+
+
 
