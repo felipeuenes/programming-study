@@ -1,5 +1,10 @@
 function calcIMC(pacient){
-    return imc;
+
+    let imc = pacient.weigth / (pacient.heigth / 100) ** 2;
+    
+
+
+    return imc.toFixed(2);
 }
 
 const listPacient = [
@@ -14,9 +19,9 @@ const listPacient = [
         heigth: 179,
         weigth: 80
 
-    }
+    },
 ]
 
-document.write(`O IMC de ${listPacient[0].name} é ${imc}`)
+document.write(`O IMC de ${listPacient[0].name} é ${calcIMC(pacient[0])}`);
 
-let num = [1, "e", 3 ]
+// let num = [1, "e", 3 ]
