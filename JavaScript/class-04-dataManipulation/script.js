@@ -44,3 +44,9 @@ console.log(String(num).length);
 
 // tirar os pontos e substituir por vazio:
 console.log(String(num1).replace(".", "").length);
+
+
+console.log(Number(num1).toFixed(2))
+
+// tirar ponto e colcoar virgula:
+console.log(String(num2.toFixed(2)).replace(".",","));
