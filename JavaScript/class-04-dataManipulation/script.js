@@ -50,3 +50,9 @@ console.log(Number(num1).toFixed(2))
 
 // tirar ponto e colcoar virgula:
 console.log(String(num2.toFixed(2)).replace(".",","));
+
+
+
+// Convert Currency
+console.log(num1.toLocaleString("pt-BR", {style: "currency", currency: "brl"}));
+console.log(num1.toLocaleString("pt-BR", {style: "currency", currency: "usd"}));
