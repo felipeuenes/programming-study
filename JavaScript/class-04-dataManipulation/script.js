@@ -56,3 +56,22 @@ console.log(String(num2.toFixed(2)).replace(".",","));
 // Convert Currency
 console.log(num1.toLocaleString("pt-BR", {style: "currency", currency: "brl"}));
 console.log(num1.toLocaleString("pt-BR", {style: "currency", currency: "usd"}));
+
+
+let sortiados = [];
+let win = false;
+let aux = 0;
+
+
+while (aux < 10) {
+   let num = Math.round(Math.random() * 10)
+    
+    if(!sortiados.includes(num)){
+        console.log(num);
+        sortiados[aux] = num;
+    }
+    aux++
+}
+
+
+console.log(sortiados)
