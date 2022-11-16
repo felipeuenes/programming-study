@@ -28,7 +28,7 @@ console.log(phrase.split(" "));
 console.log(phrase.split(" ").join("_"));
 
 // verificar palavras:
-// console.log(phrase.includes("web" || "Web"));
+console.log(phrase.includes("web"));
 
-
-console.log(phrase.toLocaleLowerCase().includes("web" || "WEB"));
+// deixar variavel minuscula e verificar
+console.log(phrase.toLocaleLowerCase().includes("web"));
