@@ -32,3 +32,15 @@ console.log(phrase.includes("web"));
 
 // deixar variavel minuscula e verificar
 console.log(phrase.toLocaleLowerCase().includes("web"));
+
+// >>>>>>> Number <<<<<<<<<
+
+let num = 754545;
+let num1 = 7.287;
+let num2 = 7.9876;
+
+// Pegar o tamanho numérico, transforma em string e usa o length:
+console.log(String(num).length);
+
+// tirar os pontos e substituir por vazio:
+console.log(String(num1).replace(".", "").length);
