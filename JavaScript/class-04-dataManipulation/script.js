@@ -7,7 +7,7 @@ function Car(motorPower){
 
 let myName = "Felipe";
 let age = 19;
-let phrase = "Eu sou web developer"
+let phrase = "Eu sou Web developer"
 
 
 console.log(myName.__proto__);
@@ -26,3 +26,9 @@ console.log(phrase.split(" "));
 
 // substitui espaços por _:
 console.log(phrase.split(" ").join("_"));
+
+// verificar palavras:
+// console.log(phrase.includes("web" || "Web"));
+
+
+console.log(phrase.toLocaleLowerCase().includes("web" || "WEB"));
