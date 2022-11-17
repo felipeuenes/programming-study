@@ -74,4 +74,32 @@ while (aux < 10) {
 }
 
 
-console.log(sortiados)
+console.log(sortiados);
+
+
+
+// >>>>>>>>>>>> Segunda parte da aula <<<<<<<<<<<<<<<<
+
+
+let date = new Date();
+let date1 = new Date('2022-11-17 12:03:19');
+
+
+let hour = date1.getHours();
+let minutes = date1.getMinutes();
+let seconds = date1.getSeconds();
+
+// document.write(`${String(hour).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`)
+
+// document.write(date);
+// document.write(date1.getSeconds());
+
+// document.write(date.toLocaleTimeString('pt-BR'));
+
+
+
+date1.setHours(date1.getHours() - 3)
+date1.setMinutes(date1.getMinutes() + 30)
+date1.setSeconds(date1.getSeconds() + 15)
+
+document.write(date1.toLocaleTimeString())
