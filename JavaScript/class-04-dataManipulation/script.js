@@ -102,4 +102,27 @@ date1.setHours(date1.getHours() - 3)
 date1.setMinutes(date1.getMinutes() + 30)
 date1.setSeconds(date1.getSeconds() + 15)
 
-document.write(date1.toLocaleTimeString())
+// document.write(date1.toLocaleTimeString())
+
+
+// >>>>>>>>> DATA <<<<<<<<<<
+
+
+
+let day = date.getDay()
+let data = date.getDate()
+let month = date.getMonth()
+let year = date.getFullYear()
+
+
+// document.write(day + 1)
+
+// document.write(data)
+// document.write(month + 1)
+// document.write(year)
+
+
+
+document.write(date.toLocaleDateString("pt-BR"))
+
+
