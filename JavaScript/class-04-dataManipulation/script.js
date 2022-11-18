@@ -123,6 +123,31 @@ let year = date.getFullYear()
 
 
 
-document.write(date.toLocaleDateString("pt-BR"))
+// document.write(date.toLocaleDateString("pt-BR"))
 
 
+
+
+
+
+// Array manipulation <<<<<<<<
+
+
+// let myArray1 = [1, "a", "A"];
+
+let myArray = Array(1, "a", () => "x");
+
+
+console.log(myArray);
+
+
+
+let techs = ["HTML", "CSS", "Git"];
+
+techs.push("JavaScript");
+techs.pop(); // remove do topo
+techs.unshift("SQL") // add no inicio
+techs.shift() // remove no inicio 
+
+
+document.write(techs);
