@@ -151,3 +151,5 @@ techs.shift() // remove no inicio
 
 
 document.write(techs);
+
+
