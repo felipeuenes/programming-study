@@ -4,9 +4,7 @@ function enviar(){
 
     let soma = num1 + num2; 
 
-    soma.innerText = `teste`;
-
-    soma.document.getElementById("div");
+    document.write(soma)
     
     // alert(`A soma de  ${num1} + ${num2} é igual a ${soma}`)
 }
