@@ -22,7 +22,7 @@ function calcular (){
     document.write("Aluno aprovado");
 }
 else{
-    document.write("Aluno reprovado");
+    document.write(" <br> Aluno reprovado");
 }
 }
 
