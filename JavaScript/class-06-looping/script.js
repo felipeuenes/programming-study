@@ -13,7 +13,7 @@ function calcular(){
     document.write(`Sua média é ${resultado}`)
 
     while (resultado < 6){
-        console.log("Reprovado")
+        document.write("Reprovado");
 
     }
 
