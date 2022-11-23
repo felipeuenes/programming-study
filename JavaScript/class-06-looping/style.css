@@ -1,0 +1,61 @@
+body{ 
+    background-color: black;
+    color: white;
+}
+
+.formu{
+    background-color: rgb(65, 65, 65);
+    width: 300px;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 200px;
+    border-radius: 20px;
+}
+
+form{
+    padding: 10px;
+    margin: 0px;
+}
+
+.nome{
+    width: 200px;
+}
+
+button{
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    border: hidden;
+    width: 250px;
+
+    height: 30px;
+    position: relative;
+    margin: 0 auto;
+}
+button:hover{
+    background-color: rgb(145, 145, 145);
+}
+
+input{
+    border-radius: 10px;
+    border: hidden;
+    width: 50px;
+    height: 30px;
+}
+
+.caixa{
+    background-color: rgb(255, 255, 255);
+    width: 320px;
+    height: 220px;
+    top: -10px;
+    /* position: relative; */
+    margin: 0 auto;
+    /* margin-top: 180px; */
+    border-radius: 20px;
+}
+h1{
+    position: relative;
+    text-align: center;
+    top: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
