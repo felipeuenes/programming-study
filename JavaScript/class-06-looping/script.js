@@ -34,8 +34,16 @@
     
 // }
 
-let resp = true;
+// let resp = true;
 
-while (resp){
-    resp = prompt("Digite seu nome");
+// while (resp){
+//     resp = prompt("Digite seu nome");
+// }
+
+const array = [1, 'A', () => "Teste"]
+
+for (let count = 0; count < array.length; count++) {
+    const element = array[count];
+    console.log(element)
+    
 }
