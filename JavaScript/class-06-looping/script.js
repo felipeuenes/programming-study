@@ -47,3 +47,7 @@ for (let count = 0; count < array.length; count++) {
     console.log(element)
     
 }
+
+for (const value of array) {
+    console.log(value);
+}
