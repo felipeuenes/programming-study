@@ -2,6 +2,6 @@
 
 const teams = ["Brasil", "Alemanha", "Argentina", "Portugal"];
 
-teams.forEach((value) => {
-    console.log("Nome: " + value)
+teams.forEach((value, index, array) => {
+    console.log(value, index, array)
 })
