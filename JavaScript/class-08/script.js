@@ -19,3 +19,6 @@ console.log(sumDor);
 
 
 console.log(real.map((value) => (value) * dolarValue).reduce((a, b) => a + b));
+
+
+console.log(real.filter((value) => value <40));
