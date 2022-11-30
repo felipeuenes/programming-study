@@ -15,3 +15,7 @@ console.log(sumReal);
 
 let sumDor = convertDolar.reduce((a, b) => a + b );
 console.log(sumDor);
+
+
+
+console.log(real.map((value) => (value) * dolarValue).reduce((a, b) => a + b));
