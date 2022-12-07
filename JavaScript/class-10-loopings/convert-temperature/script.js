@@ -17,26 +17,30 @@ function degreeConvert(degree) {
 
 
     if (scaleDegree == "C") {
-        let result = newDegree * 9/5 + 32;
-        console.log(result);
-        document.write(`A conversão de ${newDegree}C para F é ${result}`)
+        return (newDegree * 9/5 + 32) + "F";
+        // console.log(result);
+        // document.write(`A conversão de ${newDegree}C para F é ${result}`)
         
         
    }
    if (scaleDegree == "F") {
-        let result2 = (newDegree - 32) * 5/9;
-        console.log(result2);
-        document.write(`A conversão de ${newDegree}F para C é ${result2}`)
+        return ((newDegree - 32) * 5/9) + "C";
+        // console.log(result2);
+        // document.write(`A conversão de ${newDegree}F para C é ${result2}`)
    }
    
-    return degree
+    
     
 }
 
 
 try {
-    let temperature = "10C"
+    let temperature = "50F"
 console.log(`${temperature.toUpperCase()} = ${degreeConvert(temperature)}`);
+
+// degreeConvert(temperature)
+// console.log(degreeConvert(temperature));
+
 } catch (error){
     console.log(error);
 }
