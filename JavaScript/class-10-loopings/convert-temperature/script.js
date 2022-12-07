@@ -14,7 +14,7 @@ function degreeConvert(degree) {
     console.log(scaleDegree);
     console.log(newDegree);
 
-    if (!newDegree) {
+    if (newDegree == NaN) {
         throw new Error("Insira uma temperatura válida")
     }
 
@@ -22,15 +22,13 @@ function degreeConvert(degree) {
 
     if (scaleDegree.toUpperCase() == "C") {
         return (newDegree * 9/5 + 32).toLocaleString("pt-br") + "F";
-        // console.log(result);
-        // document.write(`A conversão de ${newDegree}C para F é ${result}`)
+    
         
-        
-   }
-   if (scaleDegree.toUpperCase() == "F") {
+   } else if (scaleDegree.toUpperCase() == "F") {
         return ((newDegree - 32) * 5/9).toLocaleString("pt-br") + "C";
-        // console.log(result2);
-        // document.write(`A conversão de ${newDegree}F para C é ${result2}`)
+      
+   } else{
+        throw new Error("Escala inválida");
    }
    
     
@@ -39,7 +37,7 @@ function degreeConvert(degree) {
 
 
 try {
-    let temperature = "10f"
+    let temperature = "aaa0c"
 console.log(`${temperature.toLowerCase()} = ${degreeConvert(temperature)}`);
 
 } catch (error){
