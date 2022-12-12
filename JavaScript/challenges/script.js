@@ -63,18 +63,47 @@ let menuOption
 while (true) {
     
     
-    let menuOption = prompt(`Digite a opção desejada:
+    let menuOption = prompt(`    Digite a opção desejada:
     ================
     1 - Cadastrar item
-    2 - Remover item cadastrado
-    3 - Ver itens cadastrados
+    2 - Ver itens cadastrados
+    3 - Remover item cadastrado
     4 - Sair do programa`)
     
-    if (menuOption == '4') {
+    if (menuOption === '4' || menuOption === null) {
         break
     }
-}
-alert("Programa encerrado")
 
+    if (menuOption == "") {
+        alert("Digite uma opção!")
+        continue
+    }
 
+    console.log(menuOption);
+    
+    
+    
+    
+switch (menuOption) {
+    case "1":
+        let item = prompt("Digite o item:")
+        listItens.push(" " + item);
+        alert(`"${item}" cadastrado com sucesso!`)
+      break;
+    
 
+    case "2":
+        if (listItens.length == 0) {
+            alert("Lista vazia!")
+        } else {
+            alert(listItens)
+        }
+      break;
+        
+    default:
+      break;
+    }
+            
+            console.log(listItens);
+ }
+    alert("Programa encerrado")
