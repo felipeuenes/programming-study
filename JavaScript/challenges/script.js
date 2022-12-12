@@ -86,17 +86,37 @@ while (true) {
     
 switch (menuOption) {
     case "1":
-        let item = prompt("Digite o item:")
-        listItens.push(" " + item);
-        alert(`"${item}" cadastrado com sucesso!`)
-      break;
-    
+        while (true) {
+            
+            let item = prompt("Digite o item:")
+            
+            if (item == null) {
+                break;
+            }
+            if (item == "") {
+                alert('Digite um item para cadastrar')
+                continue;   
+            }
+            
+            if (listItens.includes(item)) {
+                alert(`"${item}" já está cadastrado`)
+            } else {
+                listItens.push(item)
+                alert(`"${item}" cadastrado com sucesso!`)
+                
+            }
+            
+            console.log(item);
+        }
+        console.log(listItens);
+        
+        break;
 
     case "2":
         if (listItens.length == 0) {
             alert("Lista vazia!")
         } else {
-            alert(listItens)
+            alert(listItens.join(", "))
         }
       break;
         
