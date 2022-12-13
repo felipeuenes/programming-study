@@ -120,6 +120,25 @@ switch (menuOption) {
         }
       break;
         
+
+    case "3":
+        if (listItens.length == 0) {
+            alert("Lista vazia!")
+
+            break
+        } else {
+
+            
+            let item = prompt("Qual item deseja excluir?")
+            listItens.splice(listItens.indexOf(item), 1)
+            alert('removido')
+
+            
+            console.log(listItens);
+        }
+      break;    
+
+
     default:
       break;
     }
