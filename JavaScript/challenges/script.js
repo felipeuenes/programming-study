@@ -122,20 +122,39 @@ switch (menuOption) {
         
 
     case "3":
+
+        while (true) {        
+
         if (listItens.length == 0) {
             alert("Lista vazia!")
 
             break
         } else {
 
-            
-            let item = prompt("Qual item deseja excluir?")
-            listItens.splice(listItens.indexOf(item), 1)
-            alert('removido')
 
+
+            alert(listItens)
+            let item = prompt("Qual item deseja excluir?")
+
+            if (item == null) {
+                break;
+            }
+            if (item == "") {
+                alert('Digite o item que deseja excluir')
+                continue;   
+            }
+
+            if (listItens.includes(item)) {
+                listItens.splice(listItens.indexOf(item), 1)
+                alert(`"${item}" foi removido!`)
+            } else{
+                alert("Item não existe!")
+            }
+            
             
             console.log(listItens);
         }
+    }
       break;    
 
 
