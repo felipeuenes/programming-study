@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import HellowWorld from './components/HellowWorld';
 
 function App() {
 
@@ -12,6 +13,8 @@ const name = 'Felipe';
      <p>
             Meu primeiro projeto
           </p>
+
+          <HellowWorld />
     </div>
   );
 }
