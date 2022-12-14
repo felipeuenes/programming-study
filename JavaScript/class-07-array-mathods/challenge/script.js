@@ -39,7 +39,17 @@ console.log(expenseSum);
  
 let balence = incomeSum - expenseSum;
 
+let situation
 
+if (balence < 0) {
+    situation = 'Welcome to Serasa'
+} else if (situation == 0) {
+    situation = 'Escapou fedendo'
+} else{
+    situation = 'Congratularions, tu é o bichão'
+}
+
+console.log(situation);
 
 console.log(`Os gastos foram: ${incomeSum}`);
 console.log(`As despesas foram: ${expenseSum}`);
