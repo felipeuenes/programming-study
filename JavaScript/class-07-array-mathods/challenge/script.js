@@ -49,8 +49,10 @@ if (balence < 0) {
     situation = 'Congratularions, tu é o bichão'
 }
 
-console.log(situation);
 
 console.log(`Os gastos foram: ${incomeSum}`);
 console.log(`As despesas foram: ${expenseSum}`);
 console.log(`O saldo foi de: ${balence.toLocaleString('pt-br', {style: 'currency', currency: 'brl'})}`);
+
+
+console.log(situation);
