@@ -24,11 +24,23 @@ const expenses = [
     'food', 'R$ 1300,62',
 ]
 
+
+
+let expenseValues = expenses.filter((value) => value.includes('R$'));
+
+let expenseValueNumbers = expenseValues.map((value) => Number(value.replace('R$ ', "").replace(',','.')))
+
+let expenseSum = expenseValueNumbers.reduce((a, b) => a + b)
+
+console.log(expenseValues);
+console.log(expenseValueNumbers);
+console.log(expenseSum);
+
  
-let balence = incomeSum - expensesSum;
+let balence = incomeSum - expenseSum;
 
 
 
 console.log(`Os gastos foram: ${incomeSum}`);
-console.log(`As despesas foram: ${expensesSum}`);
-console.log(`O saldo foi de: ${balence}`);
+console.log(`As despesas foram: ${expenseSum}`);
+console.log(`O saldo foi de: ${balence.toLocaleString('pt-br', {style: 'currency', currency: 'brl'})}`);
