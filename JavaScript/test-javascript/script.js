@@ -136,6 +136,8 @@ let removeRS = salario.filter((value) => value.includes('R$'));
 
 let valueSalario = removeRS.map((value) => Number(value.replace('R$ ', "").replace(',','.')))
 
+
+
 console.log(removeRS);
 console.log(valueSalario);
 
