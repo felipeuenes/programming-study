@@ -76,20 +76,21 @@ for (let array2 = 0; array2 < array.length; array2++) {
 // Questão 6 (while):
 // Escreva os números de 0 a 500 sem os que pertencem à familía do 200 e do 300:
 
-while (true) {
-    // let numbers = Math.ceil((Math.random() * 500))
+let numbers = 0
+while (numbers < 500) {
 
-    let numbers = 0
+    // let numbers = 100
     // console.log(numbers);
 
-    if (numbers <= 200) {
+    if (numbers < 200 || numbers >= 400) {
         console.log(numbers);
         numbers++
     } else {
-        break
+        numbers++
+        continue
     }
-
-    break
+    // console.log(numbers);
+    
 }
 
 
