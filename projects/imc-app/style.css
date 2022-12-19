@@ -101,11 +101,23 @@ aside p{
     background-color: white;
     border-radius: 1.5rem;
     width: 24.0rem;
-    height: 20.0rem;
+    height: 10.0rem;
 
-    padding: 3.2rem;
+    padding: 1.2rem;
 
     box-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.541);
+    position: relative;
+}
+
+.x{
+    position: absolute;
+    top: -1rem;
+    right: -8rem;
+    cursor: pointer;
+}
+
+.modal p{
+    font-size: 2.2rem;
 }
 
 
