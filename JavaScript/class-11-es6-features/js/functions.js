@@ -17,7 +17,5 @@ function div(num1, num2) {
 
 export const operations = ({
     sum,
-    sub,
-    mult,
-    div,
+
 })
