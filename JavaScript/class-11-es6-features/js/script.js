@@ -13,14 +13,45 @@ import { operations } from "./functions.js";
 // mult(2, 2);
 
 class Person {
-    constructor(name, age){
+    constructor(name, age, canDrive){
         this.name = name,
-        this.age = age
+        this.age = age,
+        this.canDrive = age >= 18;
     }
 }
 
 
-const person1 = new Person('Felipe', 30);
+const person1 = new Person('Felipe', 19);
 
 console.log(person1.name);
 console.log(person1.age);
+console.log(person1.canDrive);
+
+const person2 = new Person('Murilo', 16);
+
+console.log(person2.name);
+console.log(person2.age);
+console.log(person2.canDrive);
+
+
+
+
+// Factory
+
+
+function person(name, age) {
+    return {
+        name,
+        age,
+        canDrive: age >= 18,
+        status: function status(canDrive){
+            if (this.canDrive) {
+                return 'Pode dirigir'
+            } else {
+                return 'Não pode dirigir'
+            }
+        }
+    }
+}
+
+console.log(person("Felipe", 19));
