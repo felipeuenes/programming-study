@@ -32,24 +32,24 @@
 
 // >>>>>> Promises <<<<<<<<
 
-console.log('Fazer requisição');
+// console.log('Fazer requisição');
 
 
 
-const promise = new Promise((resolve, reject) => {
+// const promise = new Promise((resolve, reject) => {
 
-let request = true
+// let request = true
 
-    if (request) {
-        return resolve('Requisição aceita')
-    } else {
-        return reject('requisição não aceita')
-    }
+//     if (request) {
+//         return resolve('Requisição aceita')
+//     } else {
+//         return reject('requisição não aceita')
+//     }
 
 
-})
+// })
 
-console.log(promise);
+// console.log(promise);
 
 // promise
 // .then((answer) => console.log(answer))
@@ -58,20 +58,75 @@ console.log(promise);
 
 
 
-async function requestData() {
-    try {
-        const apromise = await promise; 
-        console.log(promise);  
+// async function requestData() {
+//     try {
+//         const apromise = await promise; 
+//         console.log(promise);  
         
-    } catch (error) {
-        console.log(error);
-    } finally {
-        console.log("Requisição encerrada");
-    }
+//     } catch (error) {
+//         console.log(error);
+//     } finally {
+//         console.log("Requisição encerrada");
+//     }
    
-}
+// }
 
-requestData()
+// requestData()
 
 
 // console.log('Finalizar requisição');
+
+// const user = 'EmanuelQuintino'
+// const url = `https://api.github.com/users/${user}`
+
+// const userGitHub = fetch(url);
+
+
+
+// userGitHub
+// .then((request) => request.json())
+// .then(({name, bio}) => console.log(name, bio));
+
+// console.log(userGitHub);
+
+
+
+
+// const userName = 'EmanuelQuintino'
+// const url = `https://api.github.com/users/${userName}`
+// const gitHubUser = fetch(url);
+
+// gitHubUser
+//     .then(request => request.json())
+//     .then(({ name, bio }) => ({
+//             name,
+//             bio,
+//         })
+//     )
+
+// console.log(gitHubUser);
+
+
+// gitHubUser()
+
+
+
+
+async function userGitHubData(user) {
+    try {
+        // const url = `https://api.github.com/users/${user}`
+    await fetch(`https://api.github.com/users/${user}`)
+        .then((request) => request.json())
+        .then((data) => console.log(`${data.name}: ${data.bio}`));
+            
+    } catch (error) {
+        console.log(error);
+    } finally {
+        console.log('requisição encerrada!');
+    }
+}
+
+userGitHubData('EmanuelQuintino')
+userGitHubData('Mario13Sergio')
+userGitHubData('felipeuenes')
+userGitHubData('jose-murilo')
