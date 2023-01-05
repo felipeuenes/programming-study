@@ -2,11 +2,10 @@
 import './App.css'
 
 export function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
    <div className='container'>
-
+    <h1>Class Hooks</h1>
    </div>
   )
 }
