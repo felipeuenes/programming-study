@@ -7,6 +7,7 @@ export function App() {
   const [count, setCount] = useState(0);
   
   const [text, setText] = useState('');
+  const [text2, setText2] = useState('');
   
   // console.log(name);
 
@@ -19,7 +20,9 @@ export function App() {
   <form action="">
     <p>Palavra: {text}</p>
     <input onChange={(event) => setText(event.target.value)} type="text" />
-    <button>Enviar</button>
+    <button onClick={(e) => {e.preventDefault() 
+    setText2(text)}}>Enviar</button>
+    <p>Palavra enviada: {text2}</p>
   </form>
 
 
