@@ -13,7 +13,9 @@ export function App() {
   
 
   useEffect(() => {
-    fetch('https://api.github.com/users/felipeuenes').then(response => response.json()).then((date) => setDate(date));
+   if (text2) {
+    fetch(`https://api.github.com/users/${text2}`).then(response => response.json()).then((date) => setDate(date));
+   }
 }, [text2]);
 
 
@@ -29,7 +31,7 @@ export function App() {
     <input onChange={(event) => setText(event.target.value)} type="text" />
     <button onClick={(e) => {e.preventDefault() 
     setText2(text)}}>Enviar</button>
-    <p>Palavra enviada: {text2}</p>
+    {/* <p>Palavra enviada: {text2}</p> */}
   </form>
 
       <section>
