@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import './App.css'
 
@@ -8,8 +8,15 @@ export function App() {
   
   const [text, setText] = useState('');
   const [text2, setText2] = useState('');
+  const [date, setDate] = useState('');
   
-  // console.log(name);
+  
+
+  useEffect(() => {
+    fetch('https://api.github.com/users/felipeuenes').then(response => response.json()).then((date) => setDate(date));
+}, [text2]);
+
+
 
   return (
    <div className='container'>
@@ -25,6 +32,11 @@ export function App() {
     <p>Palavra enviada: {text2}</p>
   </form>
 
+      <section>
+        <h2 className='nameApi'>{date.name}</h2>
+        <img className='imageApi' src={date.avatar_url} alt="" />
+        <h3 className='nameApi'>{date.bio}</h3>
+      </section>
 
    </div>
   )
