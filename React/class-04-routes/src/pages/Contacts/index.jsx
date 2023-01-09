@@ -2,12 +2,12 @@
 import reactLogo from '../../assets/react.svg'
 import './style.css'
 
-export function Home() {
+export function Contact() {
  
 
   return (
     <div className="container">
-      <h1>Contatos</h1>
+      <h1>Contato</h1>
 
       <img src={reactLogo} alt="" srcset="" />
 

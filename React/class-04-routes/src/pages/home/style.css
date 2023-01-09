@@ -1,6 +1,7 @@
 body{
     color: white;
     background-color: black;
+ 
 
 }
 .container{
@@ -13,7 +14,8 @@ img{
     width: 12.0rem;
     margin: 1.6rem;
     animation-name: girar;
-    animation-duration: 20s;
+    animation-duration: infinite;
+   
     
 }
 

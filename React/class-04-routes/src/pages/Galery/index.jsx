@@ -2,7 +2,7 @@
 import reactLogo from '../../assets/react.svg'
 import './style.css'
 
-export function Home() {
+export function Galery() {
  
 
   return (
