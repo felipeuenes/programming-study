@@ -7,7 +7,7 @@ export function Home() {
 
   return (
     <div className="container">
-      <h1>Home</h1>
+      <h1>Contatos</h1>
 
       <img src={reactLogo} alt="" srcset="" />
 
