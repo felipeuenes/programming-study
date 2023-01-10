@@ -57,7 +57,10 @@ export function Home() {
 
       </div>
 
-      <video src="https://pixabay.com/pt/videos/c%C3%B3digo-fonte-desenvolvimento-c%C3%B3digo-4733/"></video>
+      <video autoplay loop poster="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.pinterest.com%2Fpin%2F218917231867127457%2F&psig=AOvVaw0DpBHqvp5faV-RvrL08UrH&ust=1673464823333000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKj8yrPcvfwCFQAAAAAdAAAAABAE" className='bg-video'>
+
+        <source media="(min-width: )" srcset="" />
+      </video>
     
     </div>
   )
