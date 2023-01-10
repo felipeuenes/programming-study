@@ -6,7 +6,11 @@ export function Galery() {
  
 
   return (
-    <div className="container">
+    <div className="containe">
+
+
+
+
       <h1>Galeria</h1>
 
       <img src={reactLogo} alt="" srcset="" />

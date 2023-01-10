@@ -6,7 +6,10 @@ export function Contact() {
  
 
   return (
-    <div className="container">
+    <div className="containe">
+
+
+
       <h1>Contato</h1>
 
       <img src={reactLogo} alt="" srcset="" />

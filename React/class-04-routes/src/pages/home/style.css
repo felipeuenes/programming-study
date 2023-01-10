@@ -1,21 +1,25 @@
 body{
     color: white;
     background-color: black;
- 
+    text-align: center;
 
 }
+
+a{ 
+    text-decoration: none;
+}
+
 .container{
     text-align: center;
-    max-width: 50.0rem;
-    margin: 0 auto;
-    margin-top: 5.0rem;
+    /* max-width: 50.0rem; */
+    /* margin: 0 auto; */
+    /* margin-top: 5.0rem; */
 }
 img{
     width: 12.0rem;
     margin: 1.6rem;
     animation-name: girar;
-    animation-duration: infinite;
-   
+    animation-duration: 2s infinite;
     
 }
 
@@ -27,3 +31,4 @@ img{
         transform: rotate(360deg);
     }
 }
+
