@@ -5,7 +5,8 @@ import './index.css'
 import { AppRoutes } from './Routes'
 import { BrowserRouter } from 'react-router-dom'
 
-import { Header } from './components/Header'
+import { Header } from './components/Header/index'
+import { Footer } from './components/Footer'
 
 
 
