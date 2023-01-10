@@ -1,6 +1,8 @@
 body{
     color: white;
-    background-color: black;
+    background: url("https://pixabay.com/pt/videos/c%C3%B3digo-fonte-desenvolvimento-c%C3%B3digo-4733/");
+    background-size: 100%;
+    background-repeat: no-repeat;
     text-align: center;
 
 }
@@ -9,12 +11,7 @@ a{
     text-decoration: none;
 }
 
-.container{
-    text-align: center;
-    /* max-width: 50.0rem; */
-    /* margin: 0 auto; */
-    /* margin-top: 5.0rem; */
-}
+
 img{
     width: 12.0rem;
     margin: 1.6rem;
@@ -33,9 +30,15 @@ img{
 }
 
 .razoesReact h1{
+    background-color: aqua;
+    margin-top: 5.0rem;
+    margin-bottom: 3.0rem;
     text-align: left;
+    color: rgb(0, 0, 0);
 }
 
 .razoesReact p{
     text-align: justify;
 }
+
+

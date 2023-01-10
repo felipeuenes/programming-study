@@ -45,8 +45,19 @@ export function Home() {
         <p>O React permite que você reuse componentes que tenham sido desenvolvido em outras aplicações e que usem a mesma função. A função de reusabilidade é uma vantagem importante para desenvolvedores em geral. </p>
 
 
+        <h1>3. Componente Fácil de Escrever</h1>
+
+        <p>Também conhecido como React JS, o componente do React é fácil de escrever porque ele usa JSX, uma extensão de sintaxe opcional para JavaScript. Ela permite que você combine HTML com JavaScript. </p>
+
+        <p>O JSX é uma excelente combinação de JavaScript e HTML. Ela simplesmente simplifica toda a estrutura de codificação escrita de um site. Além disso, a extensão também faz com que a renderização de múltiplas funções seja mais fácil.</p>
+
+        <p>Ainda que o JSX não seja a extensão de sintaxe mais popular, ela tem provado ser bastante eficiente. Especialmente quando falamos em desenvolver componentes especiais ou aplicações de alto rendimento.  </p>
+
+
 
       </div>
+
+      <video src="https://pixabay.com/pt/videos/c%C3%B3digo-fonte-desenvolvimento-c%C3%B3digo-4733/"></video>
     
     </div>
   )
