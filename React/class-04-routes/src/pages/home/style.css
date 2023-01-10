@@ -32,3 +32,10 @@ img{
     }
 }
 
+.razoesReact h1{
+    text-align: left;
+}
+
+.razoesReact p{
+    text-align: justify;
+}

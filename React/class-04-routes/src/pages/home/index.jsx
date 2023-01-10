@@ -8,21 +8,45 @@ export function Home() {
   return (
     <div className="containe">
       
-      {/* <div className='faixaTop'>
-        <a href="/gallery">
-          <p>Galeria</p>
-        </a>
-          <a href="/"><p>Home</p></a>
-          <a href="/contact"><p>Contacts</p></a>
-
-      </div> */}
+     
       
       
-      <h1>Home</h1>
+      <h1>O Que é React e Como Funciona?</h1>
 
       <img src={reactLogo} alt="" srcset="" />
 
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam enim eius exercitationem, explicabo dolorum eligendi quia, asperiores laudantium voluptate harum nobis, nam dolores perspiciatis maxime. Veritatis soluta necessitatibus id voluptatibus!</p>
+      <p>O React é a biblioteca mais popular do JavaScript e é usada para construir uma interface de usuário 'IU'. Ela oferece uma resposta excelente para o usuário adicionar comandos usando um novo método de renderizar sites. </p>
+
+     <p> Os componentes dessa ferramenta foram desenvolvidos pelo Facebook. Ela foi lançada em 2013 como uma ferramenta JavaScript de código aberto. Atualmente, ela permanece na frente das suas principais competidoras, como a Angular e a Bootstrap, as duas bibliotecas JavaScript mais bem vendidas.  </p>
+     <p>
+      Neste artigo, vamos ajudar você a entender mais sobre o que é React e ele como funciona. Assim, você vai poder tirar proveito para incrementar seu trabalho como desenvolvedor front-end.</p>
+
+
+      <h1>Por Que Usar React?</h1>
+
+      <p>O React tem sido usado por grandes companhias ao redor do mundo. Algumas delas: Netflix, Airbnb, American Express, Facebook, WhatsApp, eBay e Instagram. Essa é a prova de que a ferramenta tem um número de vantagens que não têm nem comparação nos seus competidores.</p>   
+
+      <p>Abaixo estão algumas das razões para usar o React.</p>
+
+      <div className='razoesReact'>
+      <h1>1. Fácil de Usar</h1>
+
+        <p>O React é uma biblioteca de código aberto para interfaces gráficas "GUI" que tem como foco uma só coisa: tornar a experiência do usuário com a interface mais eficiente. Ela pode ser categorizada como o “V” no padrão MVC "Model-View-Controller".</p>
+
+        <p>
+        Como um desenvolvedor de JavaScript, vai ser fácil para você entender o básico do React.
+        </p>
+
+        <p>Para fortalecer seu entendimento, dê uma explorada em alguns dos tutoriais já existentes sobre o React. Eles contêm muita informação de como usar a ferramenta, como vídeos, tutoriais e dados que podem enriquecer seus conhecimentos.</p>
+
+
+        <h1>2. Suporte a Componente Reusável em Java</h1>
+
+        <p>O React permite que você reuse componentes que tenham sido desenvolvido em outras aplicações e que usem a mesma função. A função de reusabilidade é uma vantagem importante para desenvolvedores em geral. </p>
+
+
+
+      </div>
     
     </div>
   )
