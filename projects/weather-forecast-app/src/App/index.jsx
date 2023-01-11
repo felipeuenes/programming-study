@@ -16,7 +16,7 @@ export function App() {
       <main>
         <article>
           <section className='blockCityName'>
-            <h2>Jucás, Ceára</h2>
+            <h2>Jucás, Ceará</h2>
             <p>Brasil, 11/01/2023 - 14:20:00</p>
           </section>
           <section className='blackCurrentTime'>
