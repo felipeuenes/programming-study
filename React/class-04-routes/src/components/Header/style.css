@@ -4,15 +4,36 @@
     
     font-weight: 700;
    
-    
+   
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .faixaTop p{
-    color: black;
+  .faixaTop{
+    background-color: aqua;
+    width: 100vw;
+    height: 8.0rem;
+    position: relative;
+    top: 0rem;
+    display: flex;
+    gap: 8.0rem;
+   
+  
+    
   }
+
+  ul {
+    font-weight: 700;
+   
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12.0rem;
+  }
+
+
   .active{
     color: red;
   }
