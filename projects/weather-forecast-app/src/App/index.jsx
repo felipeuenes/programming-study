@@ -30,9 +30,17 @@ export function App() {
                     </p>
                 </div>
               </div>
-              <div className=''>
-
+              <div className='blockSituation'>
+                  <img src="#" alt="icon" />
+                  <div>
+                    <p>Parcialmente Sol quente</p>
+                    <p>Sensação térmica 50.4º</p>
+                  </div>
               </div>
+          </section>
+
+          <section className='containerWeatherCondition'>
+
           </section>
         </article>
       </main>
