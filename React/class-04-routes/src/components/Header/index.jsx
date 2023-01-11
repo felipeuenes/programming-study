@@ -13,13 +13,15 @@ export function Header() {
 
          <div className='faixaTop'>
         
-    
+    <nav>
+
         <ul>
 
           <NavLink to="/" className={({isAtive}) => isAtive ? 'active' : ''}><li>Home</li></NavLink>
-          <NavLink to="/gallery"><li>Galeria</li></NavLink> 
-          <NavLink to="/contact"><li>Contatos</li></NavLink>
+          <NavLink to="/gallery" className={({isAtive}) => isAtive ? 'active' : ''}><li>Galeria</li></NavLink> 
+          <NavLink to="/contact" className={({isAtive}) => isAtive ? 'active' : ''}><li>Contatos</li></NavLink>
         </ul>
+    </nav>
 
       </div>
 

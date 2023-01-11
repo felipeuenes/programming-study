@@ -1,14 +1,4 @@
 
-.faixaTop  {
-    
-    
-    font-weight: 700;
-   
-   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
   .faixaTop{
     background-color: aqua;
@@ -18,7 +8,12 @@
     top: 0rem;
     display: flex;
     gap: 8.0rem;
+    font-weight: 700;
    
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
   
     
   }
@@ -26,15 +21,20 @@
   ul {
     font-weight: 700;
    
-    
+    list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 12.0rem;
   }
 
+  ul a{
+    color: black;
+    list-style: none;
+  }
 
-  .active{
+
+  ul a.active{
     color: red;
   }
 
