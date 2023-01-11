@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import './style.css'
 
 
@@ -15,9 +15,9 @@ export function Header() {
         
     
         
-          <Link to="/"><p>Home</p></Link>
-          <Link to="/gallery"><p>Galeria</p></Link> 
-          <Link to="/contact"><p>Contacts</p></Link>
+          <NavLink to="/" className={({isAtive}) => isAtive ? 'active' : ''}><p>Home</p></NavLink>
+          <NavLink to="/gallery"><p>Galeria</p></NavLink> 
+          <NavLink to="/contact"><p>Contacts</p></NavLink>
 
       </div>
 

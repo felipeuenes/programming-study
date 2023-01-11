@@ -13,4 +13,7 @@
   .faixaTop p{
     color: black;
   }
+  .active{
+    color: red;
+  }
 
