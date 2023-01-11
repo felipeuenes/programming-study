@@ -40,10 +40,20 @@ export function App() {
           </section>
 
           <section className='containerWeatherCondition'>
+              {/* Component */}
+          </section>
+
+          <section className='containerWeatherForecast'>
+              <ol>
+                <li>Component "Map"</li>
+              </ol>
 
           </section>
         </article>
       </main>
+      <footer>
+        <p>Web Development Course - Jucás</p>
+      </footer>
       
    </div>
   )
