@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 import './style.css'
+import { GrSearch } from 'react-icons/gr'
 
 export function App() {
   
@@ -9,8 +10,10 @@ export function App() {
       <header>
       <h1>Previsão do Tempo</h1>
       <form action="">
-        <input type="text" placeholder='Nome da cidade'/>
-        <button>Buscar</button>
+        <label htmlFor="citySeachInput" className='srOnly'>Pesquisar nome da cidade</label>
+        <input type="text" placeholder='Nome da cidade' id='citySeachInput'/>
+        <GrSearch className='searchIcon'/>
+        <button className='search-button'>Buscar</button>
       </form>
       </header>
       <main>
