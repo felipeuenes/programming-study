@@ -22,11 +22,11 @@ export function App() {
             <h2>Jucás, Ceará</h2>
             <p>Brasil, 11/01/2023 - 14:20:00</p>
           </section>
-          <section className='blackCurrentTime'>
+          <section className='blockCurrentTime'>
               <div className='currentTime'>
                 <div className='blockDegree'>
                   <img src="#" alt="icon" />
-                  <p>25.6º</p>
+                  <p className='degreeCurrent'>25.6º</p>
                   <p>
                     <span className='DegreeMax'>35.6º</span>
                     <span className='DegreeMin'>25.6º</span>
