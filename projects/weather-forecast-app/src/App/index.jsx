@@ -10,7 +10,7 @@ export function App() {
   const [searchedCity, setsearchedCity] = useState('jucas');
   const [inputCity, setInputCity] = useState('');
 
-
+  const [weatherData, setWeatherData] = useState(null);
   
   const API = `https://api.weatherapi.com/v1/forecast.json?key=fb85b303e1fe4286a2b15407223112&q=${searchedCity}&days=4&lang=pt`
 
@@ -24,6 +24,7 @@ export function App() {
       if (response.status == 200) {
         const data = await response.json();
         console.log(data);
+        setWeatherData(data)
       } else if (response.status == 400){
         alert('cidade não encontrada')
       }
@@ -61,7 +62,7 @@ export function App() {
       <main>
         <article>
           <section className='blockCityName'>
-            <h2>jucás, Ceará</h2>
+            <h2>{weatherData.location.name}, Ceará</h2>
             <p>Brasil, 11/01/2023 - 14:20:00</p>
           </section>
           <section className='blockCurrentTime'>
