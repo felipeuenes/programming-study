@@ -37,6 +37,7 @@ export function App() {
       <h1>Previsão do Tempo</h1>
       <form action="">
         <label htmlFor="citySeachInput" className='srOnly'>Pesquisar nome da cidade</label>
+
         <input type="text" placeholder='Nome da cidade' id='citySeachInput'/>
         <GoSearch className='searchIcon'/>
         <button className='search-button'>Buscar</button>
