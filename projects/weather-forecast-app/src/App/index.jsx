@@ -8,6 +8,9 @@ import { BsThermometerHigh } from 'react-icons/bs';
 export function App() {
 
   const [searchedCity, setsearchedCity] = useState('jucas');
+  const [inputCity, setInputCity] = useState('');
+
+
   
   const API = `https://api.weatherapi.com/v1/forecast.json?key=fb85b303e1fe4286a2b15407223112&q=${searchedCity}&days=4&lang=pt`
 
@@ -26,6 +29,11 @@ export function App() {
       }
   }
 
+  function searchCity(event) {
+    event.preventDefault();
+    setsearchedCity(inputCity);
+  } 
+
 
   useEffect(() => {
      getCityWeather()
@@ -35,18 +43,25 @@ export function App() {
    <div className='container'>
       <header>
       <h1>Previsão do Tempo</h1>
-      <form action="">
+      <form action="" onSubmit={searchCity}>
         <label htmlFor="citySeachInput" className='srOnly'>Pesquisar nome da cidade</label>
 
-        <input type="text" placeholder='Nome da cidade' id='citySeachInput'/>
+        <input 
+        type="text"
+        placeholder='Nome da cidade'
+        id='citySeachInput'
+        onChange={(event) => setInputCity(event.target.value)}/>
         <GoSearch className='searchIcon'/>
         <button className='search-button'>Buscar</button>
       </form>
+      <p>
+        {inputCity}
+      </p>
       </header>
       <main>
         <article>
           <section className='blockCityName'>
-            <h2>Jucás, Ceará</h2>
+            <h2>jucás, Ceará</h2>
             <p>Brasil, 11/01/2023 - 14:20:00</p>
           </section>
           <section className='blockCurrentTime'>
