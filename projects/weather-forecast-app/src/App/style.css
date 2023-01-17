@@ -1,4 +1,18 @@
 
+.container{
+    /* width: 100vw; */
+    height: 100vh;
+    overflow: auto;
+}
+
+::-webkit-scrollbar{
+    display: none;
+    background: rgba(0, 0, 0, 0.219);
+}
+::-webkit-scrollbar-thumb{
+    background-color: #106cc4;
+}
+
 h1{
     text-align: center;
     padding: 2.4rem;
@@ -77,6 +91,11 @@ main{
     border-radius: 1.6rem;
 }
 
+
+.bs{
+    font-size: 5.4rem;
+
+}
 .blockDegree{
     display: flex;
     align-items: center;
@@ -86,5 +105,11 @@ main{
 .degreeCurrent{
     font-size: 6.4rem;
     padding: .8rem;
+}
+
+
+.blockDegree p{
+    display: flex;
+    flex-direction: column;
 }
 
