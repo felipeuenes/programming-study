@@ -100,6 +100,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .degreeCurrent{
@@ -117,4 +118,8 @@ main{
 
 footer{
     text-align: center;
+}
+
+.containerWeatherCondition{
+    display: flex;
 }

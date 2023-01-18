@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import './style.css'
 import { GoSearch } from 'react-icons/go';
 import { BsThermometerHigh } from 'react-icons/bs';
-
+import { ClimateCard } from '../components/ClimateCard';
 
 export function App() {
 
@@ -11,20 +11,20 @@ export function App() {
   const [inputCity, setInputCity] = useState('');
 
   const [weatherData, setWeatherData] = useState(null);
+  const [dataNow, setDataNow] = useState();
   
   const API = `https://api.weatherapi.com/v1/forecast.json?key=fb85b303e1fe4286a2b15407223112&q=${searchedCity}&days=4&lang=pt`
 
   async function getCityWeather() {
       const response = await fetch(API);
 
-      const date = await response.json()
-      console.log(response);
-      console.log(date);
+      // const date = await response.json()
+    
 
       if (response.status == 200) {
-        const data = await response.json();
-        console.log(data);
+        const data = await response.json()
         setWeatherData(data)
+        console.log(data);
       } else if (response.status == 400){
         alert('cidade não encontrada')
       }
@@ -39,6 +39,19 @@ export function App() {
   useEffect(() => {
      getCityWeather()
   }, [searchedCity])
+
+
+  useEffect(() => {
+     const timer =  setInterval(() => {
+      setDataNow(new Date().toLocaleString())
+    }, 500);
+
+
+    return () =>{
+      clearInterval(timer)
+
+    }
+  },[])
 
   return (
    <div className='container'>
@@ -60,34 +73,39 @@ export function App() {
       </p>
       </header>
       <main>
-        <article>
+        {
+          searchedCity && weatherData &&(
+            
+            <article>
           <section className='blockCityName'>
-            <h2>{weatherData.location.name}, Ceará</h2>
-            <p>Brasil, 11/01/2023 - 14:20:00</p>
+            <h2>{weatherData.location.name}, {weatherData.location.region}</h2>
+            <p>{weatherData.location.country}, {dataNow}</p>
           </section>
           <section className='blockCurrentTime'>
               <div className='currentTime'>
                 <div className='blockDegree'>
-                  <img src="#" alt="icon" />
+                  {/* <img src={weatherData.current.condition.icon} alt="icon" /> */}
                   <BsThermometerHigh className='bs'/>
-                  <p className='degreeCurrent'>25.6º</p>
+                  <p className='degreeCurrent'>{weatherData.current.temp_c}</p>
                   <p>
-                    <span className='DegreeMax'>35.6º</span>
-                    <span className='DegreeMin'>25.6º</span>
+                    <span className='DegreeMax'>{weatherData.forecast.forecastday[0].day.maxtemp_c}</span>
+                    <span className='DegreeMin'>{weatherData.forecast.forecastday[0].day.mintemp_c}</span>
                     </p>
                 </div>
               </div>
               <div className='blockSituation'>
-                  <img src='' alt="icon" />
+                  <img src={weatherData.current.condition.icon} alt="icon" />
                   <div>
-                    <p>Parcialmente Sol quente</p>
-                    <p>Sensação térmica 50.4º</p>
+                    <p>{weatherData.current.condition.text}</p>
+                    <p>Sensação térmica de {weatherData.current.feelslike_c}</p>
                   </div>
               </div>
           </section>
 
           <section className='containerWeatherCondition'>
-              {/* Component */}
+              <ClimateCard climate={'Vento'} condition={`${weatherData.current.wind_kph}Km/h`}/>
+              <ClimateCard climate={'Vento'} condition={`${weatherData.current.wind_kph}%`}/>
+              <ClimateCard climate={'Vento'} condition={`${weatherData.current.wind_kph}mm`}/>
           </section>
 
           <section className='containerWeatherForecast'>
@@ -96,7 +114,9 @@ export function App() {
               </ol>
 
           </section>
-        </article>
+            </article>
+          )
+         } 
       </main>
       <footer>
         <p>Web Development Course - Jucás</p>
