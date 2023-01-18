@@ -102,6 +102,7 @@ export function App() {
               </div>
           </section>
 
+            
           <section className='containerWeatherCondition'>
               <ClimateCard climate={'Vento'} condition={`${weatherData.current.wind_kph}Km/h`}/>
               <ClimateCard climate={'Vento'} condition={`${weatherData.current.wind_kph}%`}/>
