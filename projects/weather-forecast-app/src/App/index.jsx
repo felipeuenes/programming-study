@@ -4,6 +4,7 @@ import './style.css'
 import { GoSearch } from 'react-icons/go';
 import { BsThermometerHigh } from 'react-icons/bs';
 import { ClimateCard } from '../components/ClimateCard';
+import { ForecastCard } from '../components/ForecastCard';
 
 export function App() {
 
@@ -111,7 +112,31 @@ export function App() {
 
           <section className='containerWeatherForecast'>
               <ol>
-                <li>Component "Map"</li>
+
+              {
+                weatherData.forecast.forecastday.map((forecastday, index) => {
+                  return(
+
+                    
+
+                    <li key={index}><ForecastCard
+                    day={
+                      index == 0 ? 'Hoje' : 
+                      Intl.DateTimeFormat('pt-br', {weekday: 'short'})
+                      .format(new Date(forecastday.date.split('-').join('-')))
+                      
+                    }
+                    icon={forecastday.day.condition.icon}
+                    tempMax={forecastday.day.maxtemp_c}
+                    tempMin={forecastday.day.mintemp_c}
+                    /></li>
+
+                  )
+                })
+              }
+
+                
+                
               </ol>
 
           </section>
