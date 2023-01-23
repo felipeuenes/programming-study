@@ -1,6 +1,10 @@
 
 import reactLogo from './assets/react.svg'
 import './App.css'
+import { UserData } from './components/userData';
+import { GlobalVariables } from './global';
+
+
 
 export function App() {
 
@@ -28,6 +32,10 @@ export function App() {
 
 
     console.log(userData);
+    console.log(JSON.stringify(userData));
+    GlobalVariables.user = userData;
+
+
   }
   
 
@@ -88,6 +96,8 @@ export function App() {
 
           <button>Enviar</button>
         </form>
+
+        <UserData/>
 
     </div>
   )
