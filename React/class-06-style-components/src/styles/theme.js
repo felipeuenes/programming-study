@@ -5,6 +5,7 @@ export default {
         main: 'blue',
         complementary: 'yellow',
         font: 'white',
+        background: 'black',
         neutral: '#808080'
     }
 }

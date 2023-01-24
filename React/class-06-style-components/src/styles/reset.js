@@ -14,5 +14,8 @@ export default createGlobalStyle`
     }
     body{
         font-size: 1.6rem;
+        background: ${(props) => props.theme.Color.background};
+        color: ${(props) => props.theme.Color.font};
+        font-family: Arial, Helvetica, sans-serif;
     }
 `
