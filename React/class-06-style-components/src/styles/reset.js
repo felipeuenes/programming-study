@@ -12,10 +12,12 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
-    body{
+    body, button, select, textarea{
         font-size: 1.6rem;
         background: ${(props) => props.theme.Color.background};
         color: ${(props) => props.theme.Color.font};
         font-family: Arial, Helvetica, sans-serif;
     }
+   
+
 `

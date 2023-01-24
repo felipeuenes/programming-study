@@ -3,7 +3,7 @@
 export default { 
     Color: {
         main: 'blue',
-        complementary: 'yellow',
+        complementary: 'white',
         font: 'white',
         background: 'black',
         neutral: '#808080'

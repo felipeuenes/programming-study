@@ -9,6 +9,8 @@ export const Container = styled.div `
  p{
   text-align: center;
  }
+ display: grid;
+ place-items: center;
 
   
 `

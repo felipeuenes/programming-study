@@ -1,7 +1,19 @@
+import './style'
+import { ButtonHome } from './style'
+
 export function Button(){
 
 
     return(
-        <button>Enviar</button>
+    
+    <>
+
+        <ButtonHome>
+           Enviar
+        </ButtonHome>
+
+
+
+    </>
     )
 }
