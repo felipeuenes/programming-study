@@ -1,0 +1,19 @@
+{
+  "name": "class-04-controllers",
+  "version": "1.0.0",
+  "description": "Class about controllers(MVC)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "controllers"
+  ],
+  "author": "Felipe Uenes",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
