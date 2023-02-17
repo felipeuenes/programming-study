@@ -7,6 +7,8 @@ router.get('/', (req, res) =>{
 })
 
 router.post('/usuario', controllers.create)
+router.delete('/delete', controllers.delete)
+router.put('/update', controllers.update)
 
 
 module.exports = router
