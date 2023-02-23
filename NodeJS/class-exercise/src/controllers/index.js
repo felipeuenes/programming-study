@@ -12,7 +12,7 @@ module.exports ={
         res.json({ situation: `Update usuario de ID ${id}`});
     },
     delete (req, res){
-        const {id, name} = req.body;
+        const {id, name} = req.query;
         res.json({ situation: `Usuario com ID ${id} foi deletado`});
     },
   

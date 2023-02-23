@@ -7,7 +7,7 @@ router.get('/', (req, res) =>{
 })
 
 router.post('/usuario', controllers.create)
-router.delete('/delete', controllers.delete)
+router.delete('/delete/:id', controllers.delete)
 router.put('/update', controllers.update)
 
 
