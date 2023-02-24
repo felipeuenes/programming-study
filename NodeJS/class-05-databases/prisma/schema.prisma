@@ -6,3 +6,11 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
+
+model courses {
+  id         Int       @id @default(autoincrement()) @db.UnsignedSmallInt
+  name       String    @db.VarChar(255)
+  hours      Int       @db.UnsignedTinyInt
+  created_at DateTime  @default(now()) @db.DateTime(0)
+  update_at  DateTime  @default(now()) @db.DateTime(0) @updatedAt
+}
