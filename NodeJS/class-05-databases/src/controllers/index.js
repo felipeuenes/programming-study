@@ -26,16 +26,17 @@ module.exports = {
 
         try {
             const { id } = req.params;
-            const { name, hours } = req.body;
+            const name = req.body;
+            const hours = req.body;
 
             const updateCourses = await prisma.courses.update({
                 data: {name, hours: Number(hours)},
                 where: { id: Number(id) }
             })
+            res.json({updateCourses})
         } catch (error) {
             
         }
-        res.json({alert: "ok"})
     },
     async delete(req, res){
         res.json({alert: "ok"})
