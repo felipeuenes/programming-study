@@ -1,3 +1,6 @@
+create database school;
+
+
 CREATE TABLE studants (
 	id SMALLINT UNSIGNED AUTO_INCREMENT,
 	name VARCHAR(255) NOT NULL,
