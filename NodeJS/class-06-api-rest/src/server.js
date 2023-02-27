@@ -9,3 +9,7 @@ app.use(express.json());
 const routes = require('./routes')
 app.use(routes);
 
+const prisma = require('./database')
+prisma.$connect()
+.then(() => console.log('deu certo!!!!!!'))
+.catch((error) => console.log(error));
