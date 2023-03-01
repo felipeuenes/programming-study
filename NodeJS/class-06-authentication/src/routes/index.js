@@ -9,6 +9,10 @@ router.put('/user/:id', userControllers.update);
 router.delete('/user/:id', userControllers.delete);
 
 
+const loginControllers = require('../controllers/auth');
+router.post('/login', loginControllers.auth);
+
+
 
 
 module.exports = router;
