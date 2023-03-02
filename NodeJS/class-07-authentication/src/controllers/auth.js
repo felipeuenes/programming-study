@@ -2,17 +2,17 @@ const prisma = require('../database');
 
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const { secret, expireIn } = require('../configs/auth.json')
+const { secret, expiresIn } = require('../configs/auth.json')
 
 
 module.exports = {
     async auth(req, res){
         const {email, password} = req.body;
         
-        
         console.log(email);
         console.log(password);
         
+    
         if(!email) return res.status(400).json("Email is required");
         if(!password) return res.status(400).json("Password is required");
 
@@ -22,7 +22,7 @@ module.exports = {
         const passwordCheck = await bcrypt.compare(password, user.password);
         if(!passwordCheck) return res.status(400).json('Password incorrect');
         
-            const token = jwt.sign({id: user.id}, secret, {expireIn});
+            const token = jwt.sign({id: user.id}, secret, {expiresIn});
             return res.status(200).json({
                 id: user.id,
                 status: "Authenticated",
