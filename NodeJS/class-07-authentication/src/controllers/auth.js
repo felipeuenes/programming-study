@@ -9,7 +9,10 @@ module.exports = {
     async auth(req, res){
         const {email, password} = req.body;
         
-
+        
+        console.log(email);
+        console.log(password);
+        
         if(!email) return res.status(400).json("Email is required");
         if(!password) return res.status(400).json("Password is required");
 
