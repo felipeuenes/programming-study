@@ -9,3 +9,8 @@ app.use(express.json());
 const routes = require('./routers');
 app.use(routes);
 
+
+const prisma = require('./databases');
+prisma.$connect()
+.then(() => console.log('Database is connected'))
+.catch((error) => console.log(error));
