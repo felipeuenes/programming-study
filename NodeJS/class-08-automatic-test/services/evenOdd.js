@@ -4,7 +4,7 @@ module.exports = {
             return 'even'
         } else {
             return 'odd'
-            return 'odd'
+           
         }
     }
 }
