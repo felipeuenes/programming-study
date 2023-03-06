@@ -3,6 +3,7 @@ export const Theme = {
         main: '#024040',
         complementary: "#401800",
         background: '#252525',
+        font: '#000',
         neutral0: '#000',
         neutral1: '#111',
         neutral2: '#222',
