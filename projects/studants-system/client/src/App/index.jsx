@@ -1,13 +1,15 @@
 import { Home } from "../pages/Home"
-
+import { Container } from "./style"
 
 export function App() {
 
 
   return (
-   <div className="App">
-      <Home/>
-   </div>
+   <Container>
+     <Home/>
+
+   </Container>
+  
   )
 }
 
