@@ -1,6 +1,7 @@
 
 import { Outlet } from "react-router-dom"
-import { Menu } from "../components/Menu"
+import { Header } from "../components/Header"
+
 import { Container } from "./style"
 
 export function App() {
@@ -9,7 +10,7 @@ export function App() {
   return (
    <Container>
       <header>
-        <Menu/>
+       <Header/>
       </header>
       <main>
         <Outlet/>

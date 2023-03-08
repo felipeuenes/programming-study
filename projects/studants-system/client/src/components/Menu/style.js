@@ -2,38 +2,40 @@ import styled from "styled-components";
 
 export const Header = styled.div`
     
-    flex-direction: row;
-    background-color: black;
-    color: white;
-    height: 10.0rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   background: #000c;
+   width: 100%;
+   padding: 2.4rem;
+   height: calc(100vh - 10.0rem);
+   position: absolute;
 
-    
-    ul{
-        display: flex;
-        color: white;
-        gap: 3.6rem;
+   display: grid;
+   place-content: center;
+
+   ul{
         list-style: none;
-        justify-content: center;
-        align-items: center;
-        font-size: 2.2rem;
-        font-weight: 600;
+        font-size: 2.6rem;
+        text-align: center;
+
+        display: grid;
+        gap: 4.8rem;
+        
     }
+
     a{
         color: white;
-    }
-    .select{
-        color: #44bbff;
+        padding: .2rem;
+        border-radius: .4rem;
+        border-bottom: .2rem solid transparent;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .8rem;
     }
     a:hover{
-        color: #88aaff;
+        border-bottom-color: ${({theme}) => theme.colors.neutral8};
     }
-
-    #logo{
-        width: 8.0rem;
-        position: absolute;
-        left: 2.0rem;
+    .select{
+        color: #77ccdd;
     }
 `;
