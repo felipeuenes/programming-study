@@ -12,5 +12,5 @@ app.use(routes);
 const prisma = require('./database')
 prisma.$connect()
     .then(() => console.log('Database is connect'))
-    .catch((error) = console.error(error));
+    .catch((error) => console.error(error));
 
