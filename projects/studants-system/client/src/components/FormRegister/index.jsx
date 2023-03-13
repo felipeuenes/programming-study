@@ -21,25 +21,25 @@ export function FormRegister() {
             <form onSubmit={handleSubmit(onSubmit)}>
                 <section>
                     <label htmlFor="name">Nome:</label>
-                    <input type="text" id="name" {...register("name", {required: true})} />
+                    <input type="text" id="name" {...register("name", {required: true})} placeholder='Seu nome...'/>
 
                     {errors.name && <span className='erro'>Campo obrigatório</span>}
                 </section>
                 <section>
                     <label htmlFor="email">Email:</label>
-                    <input type="email" id="email" {...register("email" , {required: true})}/>
+                    <input type="email" id="email" {...register("email" , {required: true})} placeholder='seunome@email.com'/>
 
                     {errors.email && <span className='erro'>Campo obrigatório</span>}
                 </section>
                 <section>
                     <label htmlFor="fone">Telefone</label>
-                    <InputMask mask={'(99) 9 9999-9999'} maskChar='' type="tel" id="fone" {...register("fone" , {required: true})}/>
+                    <InputMask mask={'(99) 9 9999-9999'} maskChar='' type="tel" id="fone" {...register("fone" , {required: true})} placeholder='(00) 0 0000-0000'/>
 
                     {errors.email && <span className='erro'>Campo obrigatório</span>}
                 </section>
                 <section>
                     <label htmlFor="city">Cidade:</label>
-                    <input type="text" id="city" {...register("city" , {required: true})}/>
+                    <input type="text" id="city" {...register("city" , {required: true})} placeholder='Sua cidade...'/>
 
                     {errors.email && <span className='erro'>Campo obrigatório</span>}
                 </section>

@@ -17,5 +17,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <ResetStyle/>
 
     </ThemeProvider>
-  // </React.StrictMode>,
+//  </React.StrictMode>,
 )
