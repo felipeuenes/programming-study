@@ -10,12 +10,12 @@ import { router } from './routes'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <ThemeProvider theme={Theme}>
     <RouterProvider router={router}/>
     
     <ResetStyle/>
 
     </ThemeProvider>
-  </React.StrictMode>,
+  // </React.StrictMode>,
 )

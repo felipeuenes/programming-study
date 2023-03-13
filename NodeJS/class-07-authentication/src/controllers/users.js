@@ -33,6 +33,7 @@ module.exports = {
 
             const passwordHash = await bcrypt.hash(password, 10);
 
+            
 
 
             const userCreate = await prisma.users.create({
