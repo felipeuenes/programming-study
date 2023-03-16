@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client'
 import ResetStyle from './styles/reset'
 import { ThemeProvider } from 'styled-components'
 import { Theme } from './styles/theme'
-import { createBrowserRouter, BrowserRouter, RouterProvider } from 'react-router-dom'
+import { RouterProvider } from 'react-router-dom'
 import { router } from './routes'
 
 

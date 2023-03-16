@@ -2,18 +2,36 @@ import './style'
 import { Container } from './style'
 import { useForm } from 'react-hook-form'
 import InputMask from 'react-input-mask'
-
+import axios from 'axios';
+import { useState } from 'react';
 
 export function FormRegister() {
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
+    const [fone, setFone] = useState('')
+    
+    const API = 'http://localhost:3000/students';
 
     function onSubmit(data) {
     
         console.log(data);
-        alert("Aluno cadastrado!")
-        reset()
+
+        axios.post(API, data)
+        .then((res) => {
+            alert(res.data)
+            setFone('')
+            reset()
+        })
+        .catch((error) => alert(error.response.data))
+
+        
+      
     }
+
+
+
+
+
 
     console.log(errors);
     return(
@@ -33,7 +51,7 @@ export function FormRegister() {
                 </section>
                 <section>
                     <label htmlFor="fone">Telefone</label>
-                    <InputMask mask={'(99) 9 9999-9999'} maskChar='' type="tel" id="fone" {...register("fone" , {required: true})} placeholder='(00) 0 0000-0000'/>
+                    <InputMask mask={'(99) 9 9999-9999'} maskChar='' type="tel" id="fone" {...register("fone" , {required: true})} placeholder='(00) 0 0000-0000' value={fone} onChange={(event) => setFone(event.target.value)}/>
 
                     {errors.email && <span className='erro'>Campo obrigatório</span>}
                 </section>

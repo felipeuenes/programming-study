@@ -1,12 +1,12 @@
 import { Container } from "./styled"
-
+import { HandleStudents } from "../../components/HandleStudents"
 
 
 export function Students(){
     return(
         <Container>
-            <h1>Students</h1>
 
+            <HandleStudents/>
         </Container>
     )
 }
