@@ -14,11 +14,19 @@ export function HandleStudents() {
 
     const [listStudents, setListStudents] = useState([])
     const [showModal, setShowModal] = useState(false);
+    const [studentData, setStudentData] = useState({});
 
 
-    const modalOpen = () => setShowModal(true);
-    const modalClose = () => setShowModal(false);
-    
+    const modalOpen = (studentID) => {
+        
+        setShowModal(true)
+        console.log(studentID);
+
+        const student = listStudents.findIndex(student => student.id == studentID);
+        setStudentData(listStudents[student])
+    }
+        const modalClose = () => setShowModal(false);
+    console.log(studentData);
    
 
     const API = 'http://localhost:3000/students';
@@ -33,7 +41,7 @@ export function HandleStudents() {
         fetchStudents();
     }, [])
 
-    console.log(listStudents);
+   
 
     
 
@@ -73,7 +81,7 @@ export function HandleStudents() {
                                         <td>{students.fone}</td>
                                         <td>{students.city}</td>
                                         <td>
-                                            <BiEdit className='editIcon' onClick={modalOpen}/>
+                                            <BiEdit className='editIcon' onClick={() => modalOpen(students.id)}/>
                                         </td>
                                         
                                     </tr>
@@ -101,17 +109,10 @@ export function HandleStudents() {
                  <Modal.Title>Aluno</Modal.Title>
             </Modal.Header>
                  <Modal.Body>
-                            <FormUpdate/>
+                            <FormUpdate modalClose={modalClose} studentData={studentData}/>
 
                  </Modal.Body>
-            <Modal.Footer>
-                    <Button variant="secondary" onClick={modalClose}>
-                        Fechar
-                    </Button>
-                    <Button variant="primary" onClick={modalClose}>
-                        Salvar alterações
-                    </Button>
-        </Modal.Footer>
+            
       </Modal>
                 </section>
             </article>
