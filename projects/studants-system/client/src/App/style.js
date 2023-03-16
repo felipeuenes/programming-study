@@ -13,17 +13,17 @@ export const Container = styled.div`
         text-align: justify;
     }
 
-footer{
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: .8rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
+    footer{
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .8rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
 
 `;

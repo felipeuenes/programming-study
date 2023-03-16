@@ -4,11 +4,22 @@ import { useEffect, useState } from 'react';
 import Table from 'react-bootstrap/Table'
 import { BsSearch } from 'react-icons/bs'
 import { BiEdit } from 'react-icons/bi'
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal'
+import { FormUpdate } from '../FormUpdate';
+
 
 
 export function HandleStudents() {
 
     const [listStudents, setListStudents] = useState([])
+    const [showModal, setShowModal] = useState(false);
+
+
+    const modalOpen = () => setShowModal(true);
+    const modalClose = () => setShowModal(false);
+    
+   
 
     const API = 'http://localhost:3000/students';
 
@@ -23,6 +34,8 @@ export function HandleStudents() {
     }, [])
 
     console.log(listStudents);
+
+    
 
     return(
         <Container>
@@ -60,7 +73,7 @@ export function HandleStudents() {
                                         <td>{students.fone}</td>
                                         <td>{students.city}</td>
                                         <td>
-                                            <BiEdit className='editIcon'/>
+                                            <BiEdit className='editIcon' onClick={modalOpen}/>
                                         </td>
                                         
                                     </tr>
@@ -77,6 +90,29 @@ export function HandleStudents() {
                            
                         </tbody>
                         </Table>
+                </section>
+
+
+                <section>
+               
+
+      <Modal show={showModal} onHide={modalClose}>
+            <Modal.Header closeButton>
+                 <Modal.Title>Aluno</Modal.Title>
+            </Modal.Header>
+                 <Modal.Body>
+                            <FormUpdate/>
+
+                 </Modal.Body>
+            <Modal.Footer>
+                    <Button variant="secondary" onClick={modalClose}>
+                        Fechar
+                    </Button>
+                    <Button variant="primary" onClick={modalClose}>
+                        Salvar alterações
+                    </Button>
+        </Modal.Footer>
+      </Modal>
                 </section>
             </article>
         </Container>

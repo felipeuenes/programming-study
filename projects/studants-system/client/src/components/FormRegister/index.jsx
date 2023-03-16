@@ -5,6 +5,9 @@ import InputMask from 'react-input-mask'
 import axios from 'axios';
 import { useState } from 'react';
 
+
+
+
 export function FormRegister() {
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
@@ -31,9 +34,9 @@ export function FormRegister() {
 
 
 
-
-
     console.log(errors);
+
+
     return(
         <Container>
             <form onSubmit={handleSubmit(onSubmit)}>
