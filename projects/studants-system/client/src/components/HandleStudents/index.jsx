@@ -13,8 +13,8 @@ import { FormUpdate } from '../FormUpdate';
 export function HandleStudents() {
 
     const [listStudents, setListStudents] = useState([])
-    const [showModal, setShowModal] = useState(false);
     const [studentData, setStudentData] = useState({});
+    const [showModal, setShowModal] = useState(false);
 
 
     const modalOpen = (studentID) => {
@@ -88,13 +88,7 @@ export function HandleStudents() {
                                     )
                                 })
                                 }
-                            {/* <tr>
-                                <td>1</td>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>@</td>
-                            </tr> */}
+                       
                            
                         </tbody>
                         </Table>

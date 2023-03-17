@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
-export const Container = styled.section`
-     .titleSearch {
+export const Container = styled.div`
+   
+   
+   .titleSearch {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -58,6 +60,7 @@ export const Container = styled.section`
     }
     .tableStudents {
         margin-top: 1.6rem;
+        width: 100%;
     }
     .tableStudents table {
         font-size: .9rem;
