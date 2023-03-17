@@ -2,11 +2,12 @@ import { Container } from './style'
 import axios from 'axios'
 import { useEffect, useState } from 'react';
 import Table from 'react-bootstrap/Table'
-import { BsSearch } from 'react-icons/bs'
+import { BsFillTrash3Fill, BsSearch } from 'react-icons/bs'
 import { BiEdit } from 'react-icons/bi'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal'
 import { FormUpdate } from '../FormUpdate';
+
 
 
 
@@ -15,6 +16,18 @@ export function HandleStudents() {
     const [listStudents, setListStudents] = useState([])
     const [studentData, setStudentData] = useState({});
     const [showModal, setShowModal] = useState(false);
+
+    const [searchStudent, setSearchStudent] = useState('')
+
+    const filterStudents = listStudents.filter((student) => {
+        return(
+            String(student.id).toLowerCase().includes(searchStudent.toLowerCase()) ||
+            student.name.toLowerCase().includes(searchStudent.toLowerCase()) ||
+            student.city.toLowerCase().includes(searchStudent.toLowerCase()) 
+
+        )
+    })
+    console.log(filterStudents);
 
 
     const modalOpen = (studentID) => {
@@ -29,7 +42,7 @@ export function HandleStudents() {
     console.log(studentData);
    
 
-    const API = 'http://localhost:3000/students';
+    const API = 'http://localhost:3000/students/';
 
     function fetchStudents(){
         axios.get(API)
@@ -41,9 +54,29 @@ export function HandleStudents() {
         fetchStudents();
     }, [])
 
-   
+    const [studentDataForm, setStudentDataForm] = useState({
+        id: studentData.id,
+        name: studentData.name,
+        email: studentData.email,
+        fone: studentData.fone,
+        city: studentData.city,
+        
+      });
 
-    
+    function deleteStudent(id){
+
+        const isDelete = confirm('Deseja deletar?');
+        if (isDelete) {
+         axios.delete(API + `${id}`)
+         .then((res) => {
+           alert(res.data);
+           fetchStudents();
+           
+         })
+         .catch((error) => alert(error.response.data));
+        }
+     }
+     console.log(studentData.id);
 
     return(
         <Container>
@@ -55,6 +88,8 @@ export function HandleStudents() {
                         type="text"
                         id='inputSearchStudents'
                         placeholder=' '
+                        value={searchStudent}
+                        onChange={(event) => setSearchStudent(event.target.value)}
                         />
                         <label htmlFor="inputSearchStudents" className='labelInputSearch'>Buscar aluno</label>
                         <BsSearch className='searchIcon'/>
@@ -73,15 +108,16 @@ export function HandleStudents() {
                         </thead>
                         <tbody>
                             { listStudents &&
-                                listStudents.map((students) =>{
+                                filterStudents.map((students) =>{
                                     return(
                                     <tr key={students.id}>
                                         <td>{students.id}</td>
                                         <td>{students.name}</td>
                                         <td>{students.fone}</td>
                                         <td>{students.city}</td>
-                                        <td>
+                                        <td id='detals'>
                                             <BiEdit className='editIcon' onClick={() => modalOpen(students.id)}/>
+                                            <BsFillTrash3Fill onClick={() => deleteStudent(students.id)}/>
                                         </td>
                                         
                                     </tr>
@@ -103,11 +139,16 @@ export function HandleStudents() {
                  <Modal.Title>Aluno</Modal.Title>
             </Modal.Header>
                  <Modal.Body>
-                            <FormUpdate modalClose={modalClose} studentData={studentData}/>
+                            <FormUpdate 
+                            modalClose={modalClose}
+                            studentData={studentData} 
+                            fetchStudents={fetchStudents}
+                            
+                            />
 
                  </Modal.Body>
             
-      </Modal>
+            </Modal>
                 </section>
             </article>
         </Container>

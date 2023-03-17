@@ -79,5 +79,7 @@ export const Container = styled.div`
         color: red;
     }
 
-
+    .detals{
+        gap: 1.6rem;
+    }
 `;
