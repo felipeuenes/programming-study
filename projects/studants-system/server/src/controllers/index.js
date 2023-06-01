@@ -1,4 +1,4 @@
-const { json } = require('express');
+
 const prisma = require('../database')
 
 module.exports = {
